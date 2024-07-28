@@ -1,0 +1,129 @@
+*{
+ margin: none;
+ padding: none;
+ box-sizing:border-box ;
+}
+body{
+    font-family: "work sans", "sans serif", "serif";
+    color: hsl(215, 51%, 70%);
+}
+.parent{
+    display: flex;
+    background-color: hsl(217, 54%, 11%);  
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    width: 90%;
+    /* height: 80%; */
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+}
+figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}  
+/* change nth child to img if you don't use the nth child two again */
+figure :nth-child(1){
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    margin: 0%;
+    padding: 0%;
+}
+figure :nth-child(2){
+    position: relative;
+    bottom: 280px;
+    align-self: center;
+    background-color: bisque;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+
+figure :nth-child(2):hover {
+    z-index: 1;
+}
+
+figcaption{
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+figcaption, .bottom span , figure img:hover{
+    cursor: pointer;
+}
+.colm{
+    display: flex;
+    justify-content: space-between;
+}
+.clm1{
+    /* display:flex; */
+    /* height: 40px;
+    width: 150px;
+    background-color: antiquewhite; */
+    /* justify-content:; */
+    
+    color: hsl(178, 100%, 50%);
+
+}
+
+.colm img{
+    margin-right: 5px;
+    margin-bottom: 0PX;
+}
+hr {
+    
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+.bottom{
+    display: flex;
+}
+.bottom img{
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.bottom span {
+    color: white;
+}
+
+
+/* tablet */
+@media screen and (min-width:375px) {
+    .container{
+        width: 40%;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1245px){
+    .container{
+        width: 20%;
+        /* height: ; */
+    }
+}
+
+
